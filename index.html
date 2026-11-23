@@ -2301,8 +2301,7 @@ const QUESTIONS = [
         }
       ]
     }
-  }
-,
+  },
   {
     "id": 144,
     "category": "消防関係法令（共通）｜自動火災報知設備・警戒区域",
@@ -2413,8 +2412,7 @@ const QUESTIONS = [
     ],
     "answerIndex": 3,
     "explanation": "【正解：4】\nホテル（旅館）は特定防火対象物であるため、自動火災報知設備の設置を省略できない。倉庫、工場、図書館は、ここで示された省略対象となる防火対象物に含まれる。\n特定防火対象物の例：百貨店、旅館・ホテル、病院など。特定防火対象物ではないものの例：作業場・工場、映画スタジオ、共同住宅、博物館・図書館、倉庫、事務所。"
-  }
-,
+  },
   {
     "id": 152,
     "category": "危険物関係法令｜危険物施設の警報設備",
@@ -2430,8 +2428,7 @@ const QUESTIONS = [
     ],
     "answerIndex": 3,
     "explanation": "【正解：4】\n危険物政令第21条では、指定数量の倍数が10以上の製造所等（移動タンク貯蔵所を除く）で、総務省令で定めるものに警報設備の設置を求めている。危険物規則第38条第１項では、指定数量の倍数が100以上の屋内の製造所・一般取扱所や屋内貯蔵所、貯蔵倉庫の延べ面積が150㎡を超える屋内貯蔵所など、対象となる施設を具体的に定めている。"
-  }
-,
+  },
   {
     "id": 153,
     "category": "消防関係法令（共通）｜自動火災報知設備・警戒区域",
@@ -2541,8 +2538,7 @@ const QUESTIONS = [
     ],
     "answerIndex": 0,
     "explanation": "【正解：1】\n1. 「第一種配電盤」ではなく「第二種配電盤」に関する記述である。"
-  }
-,
+  },
   {
     "id": 161,
     "category": "消防関係法令（共通）｜自動火災報知設備・感知器回路の配線",
@@ -2806,8 +2802,7 @@ const QUESTIONS = [
     ],
     "answerIndex": 0,
     "explanation": "【正解：1】\n低圧ケーブルは、直流では750Ｖ以下、交流では600Ｖ以下の電路に使用されるケーブルをいう。\n2. 高圧ケーブルは、直流では750Ｖを超え7000Ｖ以下、交流では600Ｖを超え7000Ｖ以下の電路に使用される。\n4. バスダクトとは、導体を絶縁物で支持するか、又は導体を絶縁物で被覆した電線を、鋼板のダクトに入れて組み立てたものをいう。"
-  }
-,
+  },
   {
     "id": 179,
     "category": "消防関係法令（共通）｜感知器の設置場所・適応場所",
@@ -2885,8 +2880,7 @@ const QUESTIONS = [
     ],
     "answerIndex": 2,
     "explanation": "【正解：3】\n受領した解説文は途中で切れているため、正解番号のみ登録。"
-  }
-,
+  },
   {
     "id": 185,
     "category": "消防関係法令（共通）｜受信機の設置・操作",
@@ -3086,8 +3080,7 @@ const QUESTIONS = [
     ],
     "answerIndex": 3,
     "explanation": "【正解：4】\n光電式分離型感知器の光軸の高さは、天井等の高さの「80％以上」とする。"
-  }
-,
+  },
   {
     "id": 200,
     "category": "消防関係法令（共通）｜ガス漏れ火災警報設備",
@@ -3173,7 +3166,7 @@ const QUESTIONS = [
   {
     "id": 206,
     "category": "消防関係法令（共通）｜ガス漏れ火災警報設備",
-    "question": "【８】ガス漏れ火災警報設備の構成・機能に関する次の説明文について、正しいものには「○」、誤っているものには「×」を選びなさい。",
+    "question": "【８】ガス漏れ火災警報設備の構成・機能に関する次の説明文のうち、正しいものを２つ選びなさい。",
     "choices": [
       "1. 検知器の検知方式は、半導体式、接触燃焼式、気体熱伝導度式の３種類に分類される。",
       "2. 有電圧出力方式とは、通常監視時とガス漏れ検知時に異なる電圧を出力する方式である。",
@@ -3245,7 +3238,6 @@ const QUESTIONS = [
     "answerIndex": 2,
     "explanation": "【正解：3】"
   }
-
 ];
 const KEY="shobo-kakomon-progress-v1";let saved={};try{saved=JSON.parse(localStorage.getItem(KEY)||"{}")||{};if(typeof saved!=="object"||Array.isArray(saved))saved={};for(const [id,r] of Object.entries(saved)){if(!r||typeof r!=="object"||Array.isArray(r)){delete saved[id];continue;}saved[id]={attempts:Number.isFinite(+r.attempts)?Math.max(0,+r.attempts):0,correct:Number.isFinite(+r.correct)?Math.max(0,+r.correct):0,wrong:Number.isFinite(+r.wrong)?Math.max(0,+r.wrong):0,bookmarked:!!r.bookmarked};}}catch(e){saved={}}
 let list=[],pos=0,current=null,done=false,selectedChoice=[],sessionOK=0;const $=id=>document.getElementById(id);
