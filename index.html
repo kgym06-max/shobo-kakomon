@@ -10,7 +10,6 @@
 <script>
 /* 問題データ：ユーザー提供JSONのみ。追加時は配列末尾にJSONを追加してください。 */
 const QUESTIONS = [
-[
   {
     "id": 1,
     "category": "消防関係法令（共通）",
@@ -2301,7 +2300,6 @@ const QUESTIONS = [
       ]
     }
   }
-]
 ];
 const KEY="shobo-kakomon-progress-v1";let saved={};try{saved=JSON.parse(localStorage.getItem(KEY)||"{}")||{}}catch(e){saved={}}
 let list=[],pos=0,current=null,done=false,selectedChoice=[],sessionOK=0;const $=id=>document.getElementById(id);
