@@ -3237,7 +3237,60 @@ const QUESTIONS = [
     ],
     "answerIndex": 2,
     "explanation": "【正解：3】"
+  },
+  {
+    "id": 211,
+    "category": "消防関係法令（共通）｜自動火災報知設備・非火災報",
+    "question": "【１】自動火災報知設備の非火災報の原因として考えられる事象について、最も不適当なものは次のうちどれか。",
+    "choices": [
+      "設置環境に不適応な感知器の選定",
+      "結露による感知器回路の短絡",
+      "差動式分布型感知器の空気管の亀裂",
+      "終端抵抗の表面の汚れによる端子間の短絡"
+    ],
+    "answerIndex": 2,
+    "explanation": "【正解：3】\n空気管に亀裂があると、火災時に管内の空気が漏れ、空気圧が上昇せず感知器の接点が閉じない。そのため火災を感知できない。ほかの選択肢は非火災報の原因となり得る。"
+  },
+  {
+    "id": 212,
+    "category": "消防関係法令（共通）｜自動火災報知設備・非火災報",
+    "question": "【２】非火災報の原因となるものは、次のうちどれか。",
+    "choices": [
+      "感知器回路の地絡",
+      "受信機の故障",
+      "感知器種別の選定の誤り",
+      "終端器（終端抵抗）の断線"
+    ],
+    "answerIndex": 2,
+    "explanation": "【正解：3】\n設置環境に適さない感知器を選定すると、火災時の作動不良や非火災報の原因となる。Ｐ型１級発信機は導通試験装置があるため、終端器の断線を検出できる。"
+  },
+  {
+    "id": 213,
+    "category": "消防関係法令（共通）｜自動火災報知設備・非火災報",
+    "question": "【３】受信機において、火災が発生した旨の表示をしてはならない事態が消防法で定められているが、定められていない事態は次のうちどれか。",
+    "choices": [
+      "感知器回路の配線の一線に地絡が生じたとき。",
+      "開閉器の開閉等により、回路の電圧又は電流に変化が生じたとき。",
+      "振動又は衝撃を受けたとき。",
+      "感知器回路の配線の一部が短絡したとき。"
+    ],
+    "answerIndex": 3,
+    "explanation": "【正解：4】\n感知器回路の配線の一部が互いに短絡すると、Ｐ型受信機には火災信号が入力される。"
+  },
+  {
+    "id": 214,
+    "category": "消防関係法令（共通）｜自動火災報知設備・発信機",
+    "question": "【１】自動火災報知設備のＰ型１級発信機の押しボタンを押したが、受信機は火災表示と警報鳴動をしなかった。この原因として、最も適当なものは次のうちどれか。ただし、配線及び受信機は正常であるものとする。",
+    "choices": [
+      "発信機内の接点が腐食している。",
+      "発信機内の確認ＬＥＤランプ配線がはずれている。",
+      "発信機内の電話線がはずれている。",
+      "発信機内に設けられている終端器が断線している。"
+    ],
+    "answerIndex": 0,
+    "explanation": "【正解：1】\n発信機内の表示線回路側の接点が腐食して閉じないと、押しボタンを押しても火災信号を受信機へ発信できない。\n2. 確認ＬＥＤの配線が外れても、表示線から火災信号は発信される。\n3. 電話線が外れると通話できなくなるが、火災表示・警報鳴動には影響しない。\n4. 終端器が断線していても、押しボタンを押せば回路の接点が閉じ、受信機に信号が伝わる。"
   }
+
 ];
 const KEY="shobo-kakomon-progress-v1";let saved={};try{saved=JSON.parse(localStorage.getItem(KEY)||"{}")||{};if(typeof saved!=="object"||Array.isArray(saved))saved={};for(const [id,r] of Object.entries(saved)){if(!r||typeof r!=="object"||Array.isArray(r)){delete saved[id];continue;}saved[id]={attempts:Number.isFinite(+r.attempts)?Math.max(0,+r.attempts):0,correct:Number.isFinite(+r.correct)?Math.max(0,+r.correct):0,wrong:Number.isFinite(+r.wrong)?Math.max(0,+r.wrong):0,bookmarked:!!r.bookmarked};}}catch(e){saved={}}
 let list=[],pos=0,current=null,done=false,selectedChoice=[],sessionOK=0;const $=id=>document.getElementById(id);
