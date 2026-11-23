@@ -9,7 +9,7 @@
 <section class="panel"><div class="controls"><div class="field"><label for="mode">出題モード</label><select id="mode"><option value="ordered">順番に出題</option><option value="random">ランダム出題</option><option value="review">間違えた問題・復習チェックのみ</option></select></div><div class="field"><label for="scope">出題範囲</label><select id="scope"><option value="all">すべての問題</option><option value="category">消防関係法令（共通）</option></select></div></div><div class="stats"><span>進捗 <strong id="progress">読み込み中...</strong></span><span>正答率 <strong id="accuracy">—</strong></span><span>正解 <strong id="correctCount">0</strong></span><span>不正解 <strong id="wrongCount">0</strong></span></div><div class="track"><div id="bar"></div></div></section><div id="stage"></div><small style="color:#697586">学習履歴と復習チェックは、このブラウザに自動保存されます。</small></main>
 <noscript><div class="panel" style="max-width:850px;margin:0 auto 20px">JavaScriptが無効になっています。JavaScriptを有効にしてページを再読み込みしてください。</div></noscript>
 <script>
-window.addEventListener("error",function(){const p=document.getElementById("progress");if(p&&p.textContent==="読み込み中...")p.textContent="読み込みに失敗しました";});
+window.addEventListener("error",function(){const p=document.getElementById("progress");if(p)p.textContent="読み込みに失敗しました";});
 /* 問題データ：ユーザー提供JSONのみ。追加時は配列末尾にJSONを追加してください。 */
 const QUESTIONS = [
   {
